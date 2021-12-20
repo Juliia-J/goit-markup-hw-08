@@ -1,8 +1,8 @@
 .skils {
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
-    padding-top: 94px;
+    padding-top: 65px;
     padding-bottom: 94px;
   }
 }
@@ -12,9 +12,6 @@
 }
 
 .skils-examples {
-  // display: flex;
-  // align-items: flex-start;
-  // justify-content: space-between;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -51,10 +48,6 @@
   line-height: 1.71;
 }
 
-// .skils-examples__item:not(:last-child) {
-//   margin-right: 30px;
-// }
-
 .skils-examples__item::before {
   display: block;
   content: "";
@@ -63,7 +56,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondery-bkg-color);
-  // margin-bottom: 55px;
   margin-top: 55px;
   margin-bottom: 55px;
   padding: 30px 0;
