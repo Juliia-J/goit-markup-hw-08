@@ -2,8 +2,10 @@
   background-color: var(--secondery-bkg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .commands__title {
@@ -25,7 +27,9 @@
 .command-card {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    margin-left: -30px;
+  }
 }
 
 .command-card__item {
@@ -71,6 +75,7 @@
   display: flex;
   justify-content: center;
 }
+
 .soc-list__item {
   width: 44px;
   height: 44px;
