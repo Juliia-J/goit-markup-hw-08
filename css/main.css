@@ -240,6 +240,11 @@ body {
   background-color: var(--font-bkg-white-color);
 }
 
+.open-menu-btn__icon:hover,
+.open-menu-btn__icon:focus {
+  fill: var(--accent-color);
+}
+
 .mob-menu {
   position: fixed;
   background-color: var(--font-bkg-white-color);
@@ -259,10 +264,17 @@ body {
 }
 
 .close-menu-btn {
-  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   margin-left: auto;
   border: 0px solid var(--font-bkg-white-color);
   background-color: var(--font-bkg-white-color);
+}
+
+.close-menu-btn__icon:hover,
+.close-menu-btn__icon:focus {
+  fill: var(--accent-color);
 }
 
 .mob-menu__item {
@@ -311,6 +323,13 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.mob-menu-soc__link::after {
+  width: 22px;
+  height: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .hero {
@@ -491,9 +510,21 @@ body {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .works__cards {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .works__cards {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .works__title {
+    display: none;
   }
 }
 
@@ -509,34 +540,28 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .works__item:not(:last-child) {
-    margin-right: 30px;
-  }
+.works__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-@media screen and (min-width: 1200px) {
-  .work-overlay {
-    position: relative;
-  }
+.work-overlay {
+  position: relative;
 }
 
-@media screen and (min-width: 1200px) {
-  .work-overlay__text {
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    bottom: 0;
-    left: 0;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--text-white);
-    background-color: rgba(47, 48, 58, 0.8);
-    padding: 27px;
-  }
+.work-overlay__text {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-white);
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px;
 }
 
 .commands {
