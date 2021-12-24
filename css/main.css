@@ -986,22 +986,15 @@ body {
   max-width: 1600px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .main-footer {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .main-footer {
+    text-align: left;
     flex-direction: row;
     align-items: baseline;
   }
@@ -1086,9 +1079,11 @@ body {
   margin-bottom: 9px;
 }
 
-.icons {
-  display: flex;
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .icons {
+    display: flex;
+    margin-left: 70px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1101,9 +1096,15 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .network__title {
+    margin-left: 70px;
+  }
 }
 
 .soc-list--footer {
@@ -1145,7 +1146,7 @@ body {
 }
 
 .signup-form__mail {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -1158,6 +1159,12 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .signup-form__mail {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .signup-form__mail {
     width: 358px;
@@ -1166,6 +1173,8 @@ body {
 }
 
 .footer-button {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   border: none;
   border-radius: 4px;
