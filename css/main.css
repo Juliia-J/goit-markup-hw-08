@@ -837,6 +837,10 @@ body {
   }
 }
 
+.image-example {
+  display: inline-block;
+}
+
 .overley {
   position: relative;
   overflow: hidden;
@@ -988,15 +992,23 @@ body {
 
 .main-footer {
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .main-footer {
+    display: flex;
     text-align: left;
     flex-direction: row;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container-tab {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
   }
 }
 
@@ -1101,15 +1113,24 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .network__title {
     margin-left: 70px;
   }
 }
 
-.soc-list--footer {
-  margin-left: 70px;
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .soc-list--footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .soc-list--footer {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .soc-list__link--color {
@@ -1125,17 +1146,6 @@ body {
   fill: var(--text-white);
 }
 
-@media screen and (max-width: 1199px) {
-  .signup-form__label {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.signup-form {
-  align-items: center;
-}
-
 .signup__title {
   margin-bottom: 20px;
   font-weight: bold;
@@ -1145,8 +1155,12 @@ body {
   color: #ffffff;
 }
 
+.signup-form {
+  align-items: center;
+}
+
 .signup-form__mail {
-  max-width: 450px;
+  width: 450px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -1173,8 +1187,6 @@ body {
 }
 
 .footer-button {
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   border: none;
   border-radius: 4px;
