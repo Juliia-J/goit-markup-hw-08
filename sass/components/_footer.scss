@@ -7,8 +7,12 @@
 
 .main-footer {
   text-align: center;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    // display: flex;
     text-align: left;
     flex-direction: row;
     align-items: baseline;
@@ -21,6 +25,9 @@
     justify-content: space-around;
     align-items: baseline;
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
@@ -168,6 +175,10 @@
 
 .signup-form {
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .signup-form__mail {

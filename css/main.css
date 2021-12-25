@@ -994,9 +994,15 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .main-footer {
     display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-footer {
     text-align: left;
     flex-direction: row;
     align-items: baseline;
@@ -1009,6 +1015,12 @@ body {
     justify-content: space-around;
     align-items: baseline;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-tab {
+    margin-bottom: 0;
   }
 }
 
@@ -1157,6 +1169,13 @@ body {
 
 .signup-form {
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .signup-form__mail {
